@@ -283,7 +283,7 @@ span{
     }
     
 }
-@media only screen and (width:425px){
+@media only screen and (width:384px){
     body{
         background-image: url(./images/bg-mobile.png);
         background-repeat: no-repeat;
@@ -298,7 +298,7 @@ span{
         flex-direction: column;
         align-content: center;
         align-items: stretch;
-        padding: 16%;
+        padding: 13%;
     }
 
     .card2{
