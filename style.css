@@ -196,6 +196,18 @@ span{
     color: hsl(229, 7%, 55%);
 }
 
+.file{
+    transform: scale(0.9);
+}
+
+.folder{
+    transform: scale(0.9);
+}
+
+.upload{
+    transform: scale(0.9);
+}
+
 @media only screen and (width:375px){
     body{
         background-image: url(./images/bg-mobile.png);
@@ -271,15 +283,40 @@ span{
     }
     
 }
+@media only screen and (width:425px){
+    body{
+        background-image: url(./images/bg-mobile.png);
+        background-repeat: no-repeat;
+        object-fit: fill;
+        background-size: 100% 100%;
+        overflow: hidden;
+    }
 
-.file{
-    transform: scale(0.9);
-}
+    #cards{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-content: center;
+        align-items: stretch;
+        padding: 16%;
+    }
 
-.folder{
-    transform: scale(0.9);
-}
-
-.upload{
-    transform: scale(0.9);
+    .card2{
+        width: 290px;
+        background-color: hsl(228, 56%, 26%);
+        border-radius: 10px;
+        padding: 35px;
+        margin-top: 15px;
+    }
+    
+    .bubble{
+        border-radius: 10px;
+        top: -25px;
+        right: -75px;
+    }
+    
+    .bubble::after{
+        display: none;
+    }
+    
 }
