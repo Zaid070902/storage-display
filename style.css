@@ -208,7 +208,7 @@ span{
     transform: scale(0.9);
 }
 
-@media only screen and (width:375px){
+@media only screen and (max-width:425px){
     body{
         background-image: url(./images/bg-mobile.png);
         background-repeat: no-repeat;
@@ -222,9 +222,12 @@ span{
         justify-content: center;
         flex-direction: column;
         align-content: center;
-        align-items: stretch;
-        padding: 12%;
+        align-items: center;
     }
+
+    .card1{
+        margin-right: 0%;
+    }    
 
     .card2{
         width: 290px;
@@ -237,7 +240,7 @@ span{
     .bubble{
         border-radius: 10px;
         top: -25px;
-        right: -75px;
+        right: 0;
     }
     
     .bubble::after{
@@ -246,77 +249,3 @@ span{
     
 }
 
-@media only screen and (width:320px){
-    body{
-        background-image: url(./images/bg-mobile.png);
-        background-repeat: no-repeat;
-        object-fit: fill;
-        background-size: 100% 100%;
-        overflow: hidden;
-    }
-
-    #cards{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-content: center;
-        align-items: stretch;
-        padding: 5%;
-    }
-
-    .card2{
-        width: 290px;
-        background-color: hsl(228, 56%, 26%);
-        border-radius: 10px;
-        padding: 35px;
-        margin-top: 15px;
-    }
-    
-    .bubble{
-        border-radius: 10px;
-        top: -25px;
-        right: -75px;
-    }
-    
-    .bubble::after{
-        display: none;
-    }
-    
-}
-@media only screen and (width:384px){
-    body{
-        background-image: url(./images/bg-mobile.png);
-        background-repeat: no-repeat;
-        object-fit: fill;
-        background-size: 100% 100%;
-        overflow: hidden;
-    }
-
-    #cards{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-content: center;
-        align-items: stretch;
-        padding: 13%;
-    }
-
-    .card2{
-        width: 290px;
-        background-color: hsl(228, 56%, 26%);
-        border-radius: 10px;
-        padding: 35px;
-        margin-top: 15px;
-    }
-    
-    .bubble{
-        border-radius: 10px;
-        top: -25px;
-        right: -75px;
-    }
-    
-    .bubble::after{
-        display: none;
-    }
-    
-}
